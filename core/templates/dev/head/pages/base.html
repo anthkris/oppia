@@ -183,8 +183,9 @@
                 </div>
               </div>
             </noscript>
-
-            <side-navigation-bar></side-navigation-bar>
+            <div ng-if="isSidebarShown()">
+              <side-navigation-bar></side-navigation-bar>
+            </div>
           </div>
         </div>
       </div>
