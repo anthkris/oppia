@@ -1,8 +1,14 @@
 <div class="navbar-header protractor-test-navbar-header pull-left">
   <a ng-if="windowIsNarrow" ng-click="toggleSidebar()"
      class="navbar-brand oppia-navbar-menu oppia-transition-200" tabindex="0">
-    <i class="material-icons oppia-navbar-menu-icon" ng-if="!isSidebarShown()" >&#xE5D2;</i>
-    <i class="material-icons oppia-navbar-close-icon" ng-if="isSidebarShown()" >&#10005;</i>
+    <i class="material-icons oppia-navbar-menu-icon" ng-if="!isSidebarShown()">
+      <span aria-hidden="true">&#xE5D2;</span>
+      <span class="oppia-icon-accessibility-label">Menu</span>
+    </i>
+    <i class="material-icons oppia-navbar-close-icon" ng-if="isSidebarShown()" >
+      <span aria-hidden="true">&#10005;</span>
+      <span class="oppia-icon-accessibility-label">Close Menu</span>
+    </i>
   </a>
 
   <a class="oppia-navbar-brand-name oppia-transition-200" href="/"
